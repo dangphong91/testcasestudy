@@ -1,0 +1,228 @@
+*, *::after, *::before{
+    margin:0px;
+    padding:0px;
+}
+body {
+    background-image: url("images/background.jpg");
+    background-attachment: fixed;
+}
+div {
+    background-color: rgba(255, 255, 255, 0.712);
+    padding:0px;
+    width: 1000px;
+    margin: auto;
+}
+button {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(25, 214, 18);
+    border: none;
+    height: 30px;
+}
+button:hover {
+    cursor: pointer;
+}
+input {
+    color: rgb(25, 214, 18);
+    width: 350px;
+    height: 28px;
+    margin-right: 0px;
+    font-size: 18px;
+}
+.header {
+    background-image: url("images/head.jpg");
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+    padding: 4px;
+    background-color: rgba(0, 128, 128, 0);
+    border: none;
+}
+.header>button {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(224, 4, 4);
+}
+.topnav {
+    border-top: solid red 2px;
+    border-left: solid red 1px;
+    border-right: solid red 1px;
+    width: 990px;
+    height: 35px;
+    margin-top: 45px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(190, 185, 185, 0.726);
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-left: solid 1px grey;
+    border-right: solid 1px grey;
+}
+.topnav a:hover {
+    background-color: rgb(163, 163, 163);
+    color: rgb(255, 0, 34);
+}
+.depute {
+    border-left: solid red 1px;
+    border-right: solid red 1px;
+    color: rgb(102, 5, 37);
+    font-style: italic;
+    font-weight: bold;
+}
+.depute img {
+    width: 180px;
+    height: 250px;
+}
+.depute img:hover {
+    transition-duration: 2s;
+    transform: scale(1.2);
+        -webkit-transform: scale(1.2); 
+        -moz-transform: scale(1.2); 
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+    cursor: pointer; 
+}
+table {
+    border-collapse: collapse;
+}
+td {
+    padding: 10px;
+}
+.row {
+    border-left: solid red 1px;
+    border-right: solid red 1px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+h2 {
+    font-style: italic;
+    font-weight: bold;
+    color: rgb(85, 161, 9);
+    padding-left: 20px;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.column { 
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    float: left;
+    width: 17%;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(102, 5, 37);
+    font-style: italic;
+    font-weight: bold;
+}
+.column img {
+    width: 150px;
+    height: 200px;
+}
+.column img:hover {
+    transition-duration: 2s;
+    transform: scale(1.2);
+        -webkit-transform: scale(1.2); 
+        -moz-transform: scale(1.2); 
+        -o-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+    cursor: pointer; 
+}
+.column td {
+    width: 160px;
+    height: 270px;
+    vertical-align: top;
+}
+.toprank {
+    padding: 0px;
+    margin: 0px;
+    float: left;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 0);
+}
+.toprank table {
+    margin-left: 10px;
+    border-collapse: collapse;
+}
+.toprank th {
+    background-color: rgba(128, 128, 128, 0.384);
+    width: 100px;
+    height: 30px;
+    border: solid 1px grey;
+}
+.toprank td {
+    padding: 5px;
+    width: 50px;
+    height: 30px;
+}
+.toprank img {
+    width: 50px;
+    height: 50px;
+}
+#rank tr:hover {
+    transition-duration: 2s;
+    transform: scale(1.4);
+        -webkit-transform: scale(1.4); 
+        -moz-transform: scale(1.4); 
+        -o-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+    cursor: pointer; 
+}
+.pagination {
+    margin-left: 100px;
+    background-color: rgba(255, 255, 255, 0);
+    display: inline-block;
+}
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+#myBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(4, 85, 8);
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 50px;
+    height: 40px;
+} 
+#myBtn:hover {
+    background-color: #555;
+}
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: grey;
+    padding: 10px 200px;
+    text-align: left;
+}
+.footer>button {
+    font-weight: bold;
+    font-style: italic;
+}

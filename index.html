@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="edit.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="header">
+        <button style="font-size: 25px; margin-right: 150px; font-family: fantasy; color: rgb(119, 0, 255);" onclick="window.location.href='http://nhattruyen.com/'">NhatTruyen</button>
+        <input type="text"><button><i class="fa fa-search" style="margin-right: 70px; background-color: white; height: 20px; color: rgb(25, 214, 18);"></i></button>
+        <button>Alert</button><button style="margin-left: 70px" onclick="window.location.href='https://nhattruyen.com/Secure/Login.aspx?returnurl=%2F'">Đăng nhập</button>/<button onclick="window.location.href='https://www.nettruyen.com/Secure/Register.aspx?returnurl=%2F'">Đăng ký</button>
+    </div>
+    <div class="topnav">
+        <a href="http://nhattruyen.com/" target="_blank">HOME</a>
+        <a href="http://nhattruyen.com/hot" target="_blank">HOT</a>
+        <a href="http://nhattruyen.com/theo-doi" target="_blank">THEO DÕI</a>
+        <a href="http://nhattruyen.com/lich-su" target="_blank">LỊCH SỬ</a>
+        <a href="http://nhattruyen.com/the-loai" target="_blank">THỂ LOẠI</a>
+        <a href="http://nhattruyen.com/tim-truyen?status=-1&sort=11" target="_blank">XẾP HẠNG</a>
+        <a href="http://nhattruyen.com/tim-truyen-nang-cao" target="_blank">TÌM TRUYỆN</a>
+        <a href="http://nhattruyen.com/truyen-con-gai" target="_blank">CON GÁI</a>
+        <a href="http://nhattruyen.com/truyen-con-trai" target="_blank">CON TRAI</a>
+        <a href="https://www.facebook.com/groups/nettruyenonline/" target="_blank">GROUP</a>
+    </div>
+    <div class="depute">
+        <h2>TRUYỆN ĐỀ CỬ ></h2>
+        <table>
+            <tbody>
+                <tr  id="depute"></tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <hr>
+        <h2>TRUYỆN MỚI CẬP NHẬT ></h2>
+        <div class="column">
+            <table>
+                <tbody id="update1">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="column">
+            <table>
+                <tbody id="update2">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="column">
+            <table>
+                <tbody id="update3">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="column">
+            <table>
+                <tbody id="update4">
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="toprank">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Top Tháng</th>
+                        <th>Top Tuần</th>
+                        <th>Top Ngày</th>
+                    </tr>
+                </thead>
+                <tbody id="rank">
+                    
+                </tbody>
+                <tr>
+                    <td style="border:none;"></td>
+                </tr>
+                <thead>
+                    <tr>
+                        <th colspan="4">Bình Luận Mới</th>
+                    </tr>
+                </thead>
+                <tbody id="comment" style="font-size: 15px; text-align: left; background-color: white;">
+
+                </tbody>
+            </table>
+        </div>
+        <div class="pagination">
+            <a href="http://nhattruyen.com/" target="_blank" class="active">1</a>
+            <a href="http://nhattruyen.com/?page=2" target="_blank">2</a>
+            <a href="http://nhattruyen.com/?page=3" target="_blank">3</a>
+            <a href="http://nhattruyen.com/?page=4" target="_blank">4</a>
+            <a href="http://nhattruyen.com/?page=5" target="_blank">5</a>
+            <a href="http://nhattruyen.com/?page=6" target="_blank">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+    <div class="footer">
+        <button style="font-size: 25px; margin-right: 150px; font-family: fantasy; color: rgb(119, 0, 255);" onclick="window.location.href='http://nhattruyen.com/'">NhatTruyen</button>
+        <p>Nguồn nhattruyen.com</p>
+    </div>
+</body>
+<script src="edit.js"></script>
+</html>
