@@ -29,14 +29,13 @@ input {
     font-size: 18px;
 }
 .header {
-    background-image: url("images/head.jpg");
     overflow: hidden;
     position: fixed;
     top: 0px;
     width: 100%;
     text-align: center;
     padding: 4px;
-    background-color: rgba(0, 128, 128, 0);
+    background-image: url("images/header.png");
     border: none;
 }
 .header>button {
@@ -44,6 +43,20 @@ input {
     font-weight: bold;
     font-style: italic;
     color: rgb(224, 4, 4);
+}
+  button:hover {
+    opacity: 0.8;
+  }
+.searchbutton {
+    background-image: url("images/search.png");
+    margin-bottom: 1px;
+    vertical-align: bottom;
+    margin-right: 70px;
+    border: none; margin-left: -1px;
+    width: 30px; 
+    height: 30px;
+    color: rgb(25, 214, 18); 
+    cursor: pointer;
 }
 .topnav {
     border-top: solid red 2px;
@@ -56,19 +69,21 @@ input {
     padding: 5px;
     background-color: rgba(190, 185, 185, 0.726);
 }
+a {
+    text-decoration: none;
+}
 .topnav a {
     float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 5px 10px;
-    text-decoration: none;
     border-left: solid 1px grey;
     border-right: solid 1px grey;
 }
 .topnav a:hover {
     background-color: rgb(163, 163, 163);
-    color: rgb(255, 0, 34);
+    color: rgb(107, 4, 107);
 }
 .depute {
     border-left: solid red 1px;
@@ -77,18 +92,27 @@ input {
     font-style: italic;
     font-weight: bold;
 }
+.depute td {
+    border-radius: 7px;
+    overflow: hidden;
+}
 .depute img {
+    transition-duration: 1s;
+    border-radius: 10px;
     width: 180px;
     height: 250px;
 }
-.depute img:hover {
+.depute p {
+    transition-duration: 4s;
+}
+.depute td:hover img {
     transition-duration: 2s;
     transform: scale(1.2);
-        -webkit-transform: scale(1.2); 
-        -moz-transform: scale(1.2); 
-        -o-transform: scale(1.2);
-        -ms-transform: scale(1.2);
     cursor: pointer; 
+}
+.depute td:hover p {
+    transition-duration: 1s;
+    color: rgba(255, 248, 220, 0);
 }
 table {
     border-collapse: collapse;
@@ -100,11 +124,6 @@ td {
     border-left: solid red 1px;
     border-right: solid red 1px;
 }
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 h2 {
     font-style: italic;
     font-weight: bold;
@@ -125,16 +144,14 @@ h2 {
     font-weight: bold;
 }
 .column img {
+    transition-duration: 1s;
     width: 150px;
     height: 200px;
 }
 .column img:hover {
+    border-radius: 15px;
     transition-duration: 2s;
     transform: scale(1.2);
-        -webkit-transform: scale(1.2); 
-        -moz-transform: scale(1.2); 
-        -o-transform: scale(1.2);
-        -ms-transform: scale(1.2);
     cursor: pointer; 
 }
 .column td {
@@ -168,14 +185,21 @@ h2 {
     width: 50px;
     height: 50px;
 }
-#rank tr:hover {
-    transition-duration: 2s;
-    transform: scale(1.4);
-        -webkit-transform: scale(1.4); 
-        -moz-transform: scale(1.4); 
-        -o-transform: scale(1.4);
-        -ms-transform: scale(1.4);
+#rank tr:hover img {
+    border-radius: 3px;
+    transition-duration: 1.5s;
+    transform: scale(2.7);
     cursor: pointer; 
+}
+.toprank a {
+    display: block;
+    color: #3d3b3b;
+    text-align: center;
+    text-decoration: none;
+}
+.toprank a:hover {
+    background-color: rgb(163, 163, 163);
+    color: rgb(255, 0, 34);
 }
 .pagination {
     margin-left: 100px;
@@ -216,13 +240,19 @@ h2 {
     background-color: #555;
 }
 .footer {
-    width: 100%;
-    height: 50px;
-    background-color: grey;
-    padding: 10px 200px;
+    padding-left: 15%;
+    width: 85%;
+    height: 80px;
+    background-image: linear-gradient(rgba(20, 19, 22, 0.425), rgb(3, 3, 3));
     text-align: left;
 }
 .footer>button {
     font-weight: bold;
     font-style: italic;
 }
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
